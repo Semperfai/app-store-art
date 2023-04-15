@@ -1,18 +1,103 @@
 module.exports = {
   root: true,
   env: {
-    node: true,
+    node: true
   },
   extends: [
-    'plugin:vue/vue3-essential',
-    '@vue/airbnb',
-    '@vue/typescript/recommended',
+    'plugin:vue/strongly-recommended',
+    '@vue/airbnb'
   ],
   parserOptions: {
-    ecmaVersion: 2020,
+    parser: 'babel-eslint'
   },
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-  },
+    'vue/html-self-closing': ['error', {
+      html: {
+        void: 'never',
+        normal: 'always',
+        component: 'always'
+      },
+      svg: 'always',
+      math: 'always'
+    }],
+    'vue/html-indent': [
+      'error',
+      4,
+      {
+        attribute: 1,
+        baseIndent: 1,
+        closeBracket: 0,
+        alignAttributesVertically: true,
+        ignores: []
+      }
+    ],
+    'vue/max-attributes-per-line': ['error', {
+      singleline: {
+        max: 1
+      },
+      multiline: {
+        max: 1
+      }
+    }],
+    'vue/no-irregular-whitespace': ['error', {
+      skipStrings: true,
+      skipComments: false,
+      skipRegExps: false,
+      skipTemplates: false,
+      skipHTMLAttributeValues: false,
+      skipHTMLTextContents: false
+    }],
+    'vue/component-definition-name-casing': ['error', 'PascalCase'],
+    'vue/match-component-file-name': ['error', {
+      extensions: ['vue'],
+      shouldMatchCase: false
+    }],
+    'vue/no-dupe-keys': ['error', {
+      groups: []
+    }],
+    'vue/component-name-in-template-casing': ['error', 'kebab-case', {
+      registeredComponentsOnly: true
+    }],
+    'comma-dangle': ['error', {
+      arrays: 'never',
+      objects: 'never',
+      imports: 'never',
+      exports: 'never',
+      functions: 'never'
+    }],
+    'linebreak-style': ['error', 'windows'],
+    'arrow-parens': ['error', 'as-needed'],
+    'no-plusplus': 'off',
+    'constructor-super': 'off',
+    'no-mixed-operators': [
+      'error',
+      {
+        groups: [
+          ['+', '-', '*', '/', '%', '**'],
+          ['&', '|', '^', '~', '<<', '>>', '>>>'],
+          ['==', '!=', '===', '!==', '>', '>=', '<', '<='],
+          ['&&', '||'],
+          ['in', 'instanceof']
+        ],
+        allowSamePrecedence: true
+      }
+    ],
+    'import/extensions': 'off',
+    'import/prefer-default-export': 'off',
+    'no-param-reassign': 'off',
+    'prefer-destructuring': ['error', {
+      array: true,
+      object: true
+    }, {
+      enforceForRenamedProperties: false
+    }
+    ],
+    'no-bitwise': ['error', { allow: ['~'] }],
+    'max-len': ['error', { code: 120 }],
+    'object-curly-newline': ['error', {
+      ObjectExpression: { multiline: true, consistent: true },
+      ObjectPattern: { multiline: true, consistent: true }
+    }],
+    'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }]
+  }
 };

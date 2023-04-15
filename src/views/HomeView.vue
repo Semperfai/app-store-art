@@ -1,18 +1,32 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-  </div>
+    <div class="home">
+        <div>
+            <p>Count: {{ counter.count }}</p>
+            <p>Double count: {{ counter.doubleCount }}</p>
+            <p>Name: {{ counter.name }}</p>
+            <button @click="incrementCounter">
+                Increment
+            </button>
+        </div>
+        <img
+            alt="Vue logo"
+            src="../assets/logo.png"
+        >
+        <hello-world msg="Welcome to Your Vue.js + TypeScript App" />
+        <my-header />
+    </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+<script setup lang="ts">
+import HelloWorld from '@/components/HelloWorld.vue';
+import MyHeader from '@/components/MyHeader.vue';
+import { useCounterStore } from '@/stores';
 
-export default defineComponent({
-  name: 'HomeView',
-  components: {
-    HelloWorld,
-  },
-});
+const counter = useCounterStore();
+
+// eslint-disable-next-line no-unused-vars
+const incrementCounter = () => {
+  counter.increment();
+};
+
 </script>

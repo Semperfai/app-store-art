@@ -1,10 +1,23 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+    <div>
+        <div class="bg-red-500">
+            BEBRA
+        </div>
+        <nav>
+            <router-link to="/">
+                Home
+            </router-link> |
+            <router-link to="/about">
+                About
+            </router-link>
+        </nav>
+        <router-view />
+    </div>
 </template>
+<script setup lang="ts">
+import './assets/tailwind.css';
+
+</script>
 
 <style>
 #app {
