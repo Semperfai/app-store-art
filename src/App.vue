@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="bg-red-500">
-            BEBRA
+            BEBRA TV
         </div>
         <nav>
             <router-link to="/">

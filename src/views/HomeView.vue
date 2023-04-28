@@ -7,6 +7,7 @@
             <button @click="incrementCounter">
                 Increment
             </button>
+            <my-form />
         </div>
         <img
             alt="Vue logo"
@@ -18,13 +19,13 @@
 </template>
 
 <script setup lang="ts">
+import MyForm from '@/components/MyForm.vue';
 import HelloWorld from '@/components/HelloWorld.vue';
 import MyHeader from '@/components/MyHeader.vue';
 import { useCounterStore } from '@/stores';
 
 const counter = useCounterStore();
 
-// eslint-disable-next-line no-unused-vars
 const incrementCounter = () => {
   counter.increment();
 };

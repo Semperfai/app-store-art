@@ -8,4 +8,7 @@ import './assets/tailwind.css';
 const pinia = createPinia();
 const app = createApp(App);
 
-app.use(pinia).use(router).mount('#app');
+app
+  .use(pinia)
+  .use(router)
+  .mount('#app');
