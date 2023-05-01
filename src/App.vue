@@ -1,8 +1,8 @@
 <template>
-    <div>
-        <div class="bg-red-500">
-            BEBRA TV
-        </div>
+    <div class="w-full px-2">
+        <h1 class="mt-2 text-black bg-cyan-500 font-serif text-2xl hover:bg-green-600  hover:text-blue-900">
+            MY TEST APP
+        </h1>
         <nav>
             <router-link to="/">
                 Home

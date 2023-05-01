@@ -9,20 +9,22 @@
             </button>
             <my-form />
         </div>
-        <img
-            alt="Vue logo"
-            src="../assets/logo.png"
-        >
-        <hello-world msg="Welcome to Your Vue.js + TypeScript App" />
+        <hello-world :msg="message" />
         <my-header />
+        <my-input />
     </div>
 </template>
 
 <script setup lang="ts">
-import MyForm from '@/components/MyForm.vue';
 import HelloWorld from '@/components/HelloWorld.vue';
+import MyForm from '@/components/MyForm.vue';
 import MyHeader from '@/components/MyHeader.vue';
+import MyInput from '@/components/MyInput.vue';
+import { ref } from 'vue';
+
 import { useCounterStore } from '@/stores';
+
+const message = ref('Welcome to Your Vue.js + TypeScript App');
 
 const counter = useCounterStore();
 

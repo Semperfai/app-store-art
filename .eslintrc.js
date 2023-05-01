@@ -93,7 +93,7 @@ module.exports = {
     }
     ],
     'no-bitwise': ['error', { allow: ['~'] }],
-    'max-len': ['error', { code: 120 }],
+    'max-len': ['error', { code: 200 }],
     'object-curly-newline': ['error', {
       ObjectExpression: { multiline: true, consistent: true },
       ObjectPattern: { multiline: true, consistent: true }
