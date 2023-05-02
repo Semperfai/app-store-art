@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full px-2">
+    <div class="w-full h-screen bg-green-300 px-2  md:bg-yellow-200 ">
         <h1 class="mt-2 text-black bg-cyan-500 font-serif text-2xl hover:bg-green-600  hover:text-blue-900">
             MY TEST APP
         </h1>

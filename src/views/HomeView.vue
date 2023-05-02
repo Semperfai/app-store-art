@@ -4,6 +4,9 @@
             <p>Count: {{ counter.count }}</p>
             <p>Double count: {{ counter.doubleCount }}</p>
             <p>Name: {{ counter.name }}</p>
+            <p>Age: {{ counter.age }}</p>
+            <p>Age*2: {{ counter.doubleAge }}</p>
+
             <button @click="incrementCounter">
                 Increment
             </button>

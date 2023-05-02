@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1682945857016" clover="3.2.0">
-  <project timestamp="1682945857017" name="All files">
+<coverage generated="1683024904385" clover="3.2.0">
+  <project timestamp="1683024904385" name="All files">
     <metrics statements="75" coveredstatements="75" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1" elements="82" coveredelements="82" complexity="0" loc="75" ncloc="75" packages="1" files="5" classes="5"/>
     <file name="AsAsync.vue" path="C:\Users\Svyatoslav\Desktop\Svyat\JuniorProjects\app-store-art\src\components\AsAsync.vue">
       <metrics statements="22" coveredstatements="22" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
