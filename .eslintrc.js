@@ -65,7 +65,7 @@ module.exports = {
       exports: 'never',
       functions: 'never'
     }],
-    'linebreak-style': ['error', 'windows'],
+    'linebreak-style': ['error', process.platform === 'win32' ? 'windows' : 'unix'],
     'arrow-parens': ['error', 'as-needed'],
     'no-plusplus': 'off',
     'constructor-super': 'off',
