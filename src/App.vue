@@ -17,6 +17,9 @@
 <script setup lang="ts">
 import './assets/tailwind.css';
 
+const test = () => 'test';
+
+test();
 </script>
 
 <style>
