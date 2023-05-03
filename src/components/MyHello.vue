@@ -11,8 +11,10 @@ defineExpose(props);
 </script>
 
 <template>
-    <div>{{ count }} x {{ times }} = {{ result }}</div>
-    <button @click="times += 1">
-        x1
-    </button>
+    <div>
+        <div>{{ count }} x {{ times }} = {{ result }}</div>
+        <button @click="times += 1">
+            x1
+        </button>
+    </div>
 </template>
