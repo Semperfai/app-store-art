@@ -1,9 +1,13 @@
 <script setup lang='ts'>
 </script>
 <template>
-    <div>
-        BEBRA
-    </div>
+    <label for="my-inp-1">
+        <input
+            type="color"
+            name="colorTestInp"
+            id="my-inp-1"
+        >
+    </label>
 </template>
 
 <style scoped>

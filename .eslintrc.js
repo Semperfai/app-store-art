@@ -11,6 +11,7 @@ module.exports = {
     parser: 'babel-eslint'
   },
   rules: {
+    'no-tabs': ['error', { allowIndentationTabs: true }],
     'vue/html-self-closing': ['error', {
       html: {
         void: 'never',
