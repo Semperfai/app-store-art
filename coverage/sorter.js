@@ -191,6 +191,17 @@ var addSorting = (function() {
         addSortIndicators();
         enableUI();
     };
+
+    function reset() {
+        currentSort = {
+            index: 0,
+            desc: false
+        };
+
+        return {
+             reset: reset
+        }
+    }
 })();
 
 window.addEventListener('load', addSorting);

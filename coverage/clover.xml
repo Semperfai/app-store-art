@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1683024904385" clover="3.2.0">
-  <project timestamp="1683024904385" name="All files">
-    <metrics statements="75" coveredstatements="75" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1" elements="82" coveredelements="82" complexity="0" loc="75" ncloc="75" packages="1" files="5" classes="5"/>
+<coverage generated="1683652289420" clover="3.2.0">
+  <project timestamp="1683652289420" name="All files">
+    <metrics statements="77" coveredstatements="77" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1" elements="84" coveredelements="84" complexity="0" loc="77" ncloc="77" packages="1" files="5" classes="5"/>
     <file name="AsAsync.vue" path="C:\Users\Svyatoslav\Desktop\Svyat\JuniorProjects\app-store-art\src\components\AsAsync.vue">
       <metrics statements="22" coveredstatements="22" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
       <line num="1" count="1" type="stmt"/>
@@ -72,7 +72,7 @@
       <line num="12" count="1" type="stmt"/>
     </file>
     <file name="MyHello.vue" path="C:\Users\Svyatoslav\Desktop\Svyat\JuniorProjects\app-store-art\src\components\MyHello.vue">
-      <metrics statements="18" coveredstatements="18" conditionals="1" coveredconditionals="1" methods="0" coveredmethods="0"/>
+      <metrics statements="20" coveredstatements="20" conditionals="1" coveredconditionals="1" methods="0" coveredmethods="0"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="1" type="stmt"/>
       <line num="3" count="1" type="stmt"/>
@@ -91,6 +91,8 @@
       <line num="16" count="1" type="stmt"/>
       <line num="17" count="1" type="stmt"/>
       <line num="18" count="1" type="stmt"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="20" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

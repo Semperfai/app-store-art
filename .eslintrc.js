@@ -8,9 +8,12 @@ module.exports = {
     '@vue/airbnb'
   ],
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: '@typescript-eslint/parser'
   },
+  plugins: ['@typescript-eslint'],
   rules: {
+    'vue/multi-word-component-names': 'off',
+    'import/no-unresolved': 'off',
     'no-tabs': ['error', { allowIndentationTabs: true }],
     'vue/html-self-closing': ['error', {
       html: {
