@@ -1,5 +1,6 @@
 <script setup lang='ts'>
-import BaseLayout from '@/shared/ui/BaseLayout/BaseLayout.vue';
+import PageLayout from '@/shared/ui/Layout/PageLayout.vue';
+import AppLogo from '@/shared/ui/AppLogo/AppLogo.vue';
 import { ref } from 'vue';
 
 const count = ref(0);
@@ -9,11 +10,10 @@ const counter = () => {
 
 </script>
 <template>
-    <BaseLayout>
+    <PageLayout>
         <template #header>
-            <h1>Counter</h1>
+            <AppLogo />
         </template>
-
         <template #default>
             <div
                 class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl"
@@ -39,5 +39,5 @@ const counter = () => {
         <template #footer>
             <p>Counter app for example</p>
         </template>
-    </BaseLayout>
+    </PageLayout>
 </template>

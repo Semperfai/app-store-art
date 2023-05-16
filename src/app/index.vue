@@ -1,12 +1,13 @@
 <script setup lang="ts">
 import { Routing } from '@/pages';
+import AppLayout from '@/shared/ui/AppLayout/AppLayout.vue';
 
 </script>
 
 <template>
-    <div class="app">
+    <AppLayout>
         <Routing />
-    </div>
+    </AppLayout>
 </template>
 <script setup lang="ts">
 </script>
